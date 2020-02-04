@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="350.0" maxWidth="500.0" minHeight="350.0" minWidth="500.0" prefHeight="350.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="os.rozgonov.notebook.view.ReminderController">
+   <children>
+      <Button fx:id="Cancel" layoutX="67.0" layoutY="241.0" mnemonicParsing="false" onAction="#handleCancel" text="Отмена" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="100.0">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button fx:id="Ok" layoutX="364.0" layoutY="241.0" mnemonicParsing="false" onAction="#handleOk" text="Сохранить" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="100.0">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <DatePicker fx:id="dpR" layoutX="144.0" layoutY="35.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#Date1" onMouseEntered="#setDateNow" prefHeight="28.0" prefWidth="200.0" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="60.0">
+         <effect>
+            <DropShadow />
+         </effect>
+      </DatePicker>
+      <Label layoutX="225.0" layoutY="77.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="16.0" prefWidth="90.0" text="Выбери дату" AnchorPane.leftAnchor="205.0" AnchorPane.rightAnchor="205.0" AnchorPane.topAnchor="30.0" />
+      <Label layoutX="200.0" layoutY="97.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="16.0" prefWidth="100.0" text="Выбери время" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="97.0" />
+      <TextArea fx:id="RText" layoutX="37.0" layoutY="199.0" prefHeight="77.0" prefWidth="421.0" AnchorPane.bottomAnchor="75.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="200.0" />
+      <Label layoutX="148.0" layoutY="177.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="16.0" prefWidth="200.0" text="Напиши текст напоминания" AnchorPane.bottomAnchor="160.0" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="170.0" />
+      <ComboBox fx:id="ChosenHour" layoutX="56.0" layoutY="136.0" prefWidth="150.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="300.0" AnchorPane.topAnchor="135.0" />
+      <ComboBox fx:id="ChosenMin" layoutX="271.0" layoutY="136.0" prefWidth="150.0" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="135.0" />
+      <Label layoutX="72.0" layoutY="113.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="16.0" prefWidth="100.0" text="Часы" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="380.0" AnchorPane.topAnchor="115.0" />
+      <Label layoutX="321.0" layoutY="115.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="16.0" prefWidth="100.0" text="Минуты" AnchorPane.leftAnchor="330.0" AnchorPane.rightAnchor="79.0" AnchorPane.topAnchor="115.0" />
+   </children>
+   <effect>
+      <Blend opacity="0.0" />
+   </effect>
+</AnchorPane>

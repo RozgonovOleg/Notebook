@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Notebook.jnlp">
+  <information>
+    <title>Notebook</title>
+    <vendor>os.rozgonov</vendor>
+    <description>Notebook</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Notebook.jar" size="124492" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="0" height="0" main-class="os.rozgonov.notebook.MainApp"  name="Notebook" />
+  <update check="background"/>
+</jnlp>
